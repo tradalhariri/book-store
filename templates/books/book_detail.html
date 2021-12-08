@@ -1,0 +1,29 @@
+{% extends "_base.html" %}
+
+{% block title %}Book list {% endblock %}
+
+{% block content %}
+<h1>Book detail</h1>
+<table class="table">
+    <thead>
+        <tr>
+          <th scope="col">Title</th>
+          <th scope="col">Publisher</th>
+          <th scope="col">Description</th>
+          <th scope="col">Update</th>
+          <th scope="col">Delete</th>
+
+        </tr>
+      </thead>
+    <tbody>  
+<tr>
+    <td>{{book.title}}</td>
+    <td>{{book.publisher}}</td>
+    <td>{{book.description}}</td>
+    <td><a href="{{ book.get_absolute_url }}update/">Update</a></td>
+    <td><a href="{{ book.get_absolute_url }}delete/">Delete</a></td>
+
+  </tr>
+</tbody>
+</table>
+{% endblock %}

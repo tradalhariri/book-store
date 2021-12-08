@@ -148,4 +148,4 @@ $ docker-compose run --rm web pip-compile requirements/requirements.in
 - `django-allauth` supports [many, many other providers in the official docs](https://django-allauth.readthedocs.io/en/latest/providers.html) -->
 
 
-[Pull Request]()
+[Pull Request](https://github.com/tradalhariri/book-store/pull/1)
